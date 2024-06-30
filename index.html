@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sangeet - Your Melodic Journey</title>
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+            
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("images/indeximage.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 0; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 15s infinite alternate; 
+        }
+        .container {
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.338);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            animation: pulse 3s infinite alternate; 
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            background-color: #032a44;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <link rel="icon" href="images/logo1.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to SANGEET</h1>
+        <a href="login.php" class="btn">Login</a>
+        <a href="register.php" class="btn">Register</a>
+    </div>
+</body>
+</html>
